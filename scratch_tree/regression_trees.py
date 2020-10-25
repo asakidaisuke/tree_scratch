@@ -3,7 +3,7 @@ from scratch_tree._base_estimator import _BaseEstimator
 
 import numpy as np
 
-class DecisionTreeRegressor(BaseTree, _Tree, _BaseEstimator):
+class ScratchDecisionTreeRegressor(BaseTree, _Tree, _BaseEstimator):
     def __init__(self, n_min = 30):
         self.n_min = n_min
     
@@ -29,7 +29,7 @@ class DecisionTreeRegressor(BaseTree, _Tree, _BaseEstimator):
     
     
     
-class RandomforestRegressor(BaseTree, _Tree, _BaseEstimator):
+class ScratchRandomforestRegressor(BaseTree, _Tree, _BaseEstimator):
     def __init__(self, n_min = 30, n_estimator= 100):
         self.n_min = n_min
         self.n_estimator = n_estimator
@@ -69,7 +69,7 @@ class RandomforestRegressor(BaseTree, _Tree, _BaseEstimator):
     
     
     
-class GradientBoostingRegressor(BaseTree, _Tree, _BaseEstimator):
+class ScratchGradientBoostingRegressor(BaseTree, _Tree, _BaseEstimator):
     def __init__(self, n_min = 30, n_estimator=150, lamda= 0.1, max_div = 3):
         self.n_min = n_min
         self.n_estimator = n_estimator
